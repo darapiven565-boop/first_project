@@ -30,9 +30,15 @@ print("Every student gets", n7 // k, "apples")
 
 # Задача 6. Остання цифра числа
 # Користувач вводить число. Виведи його останню цифру.
+n10 = int(input("Enter any number: "))
+print("Last digit is", n10 % 10)
 
 # Задача 7*. Обмін змінних
 # Користувач вводить два числа. Після цього потрібно “поміняти” їх місцями і вивести результат.
 n8 = float(input("Enter first number: "))
 n9 = float(input("Enter second number: "))
-print("your numbers are:", n9, n8)
+a = n8
+n8 = n9
+n9 = a
+# n1, n2 = n2, n1
+print("your numbers are:",n8, n9)
