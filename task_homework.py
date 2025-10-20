@@ -35,4 +35,4 @@ print("Every student gets", n7 // k, "apples")
 # Користувач вводить два числа. Після цього потрібно “поміняти” їх місцями і вивести результат.
 n8 = float(input("Enter first number: "))
 n9 = float(input("Enter second number: "))
-print("youe numbers are:", n9, n8)
+print("your numbers are:", n9, n8)
