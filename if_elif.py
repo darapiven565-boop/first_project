@@ -198,53 +198,81 @@ elif x3 ** 2 + y3 ** 2 > r ** 2:
     print("the point A is outside the circle.")
 
 # Дано натуральное число. Визначити, чи закінчується число парною цифрою.
-# Вхідні дані:
-# 1234
-# 35
-# Вихідні дані:
-# True
-# False
- 
- 
+
+n2 = str(int(input("Enter the natural number: ")))
+
+n2 = n2[-1]
+
+n2 = int(n2)
+
+# n2 = bool(n2)
+# print(n2)
+
+if n2 % 2 == 0:
+    print("True")
+else:
+    print("False")
 
 # Напишіть програму для знаходження коренів квадратного рівняння a*x2 + b*x + c = 0. Користувач вводить значення коефіцієнтів a, b, c. У вхідних даних наведено три пари вхідних значень коефіцієнтів, а у вихідних даних - відповідні повідомлення про кількість коренів або їх відсутність.
-# Вхідні дані:
-# 8
-# 4
-# 2
-# 3.6
-# 10
-# -3
-# 2
-# 4
-# 2
-# Вихідні дані:
-# No roots.
-# 0.27 and -3.05
-# -1.00
+a = float(input("Enter the number for a: "))
+b = float(input("Enter the number for b: "))
+c = float(input("Enter the number for c: "))
+
+d = b ** 2 - 4 * a * c
+
+if d > 0:
+    x1 = (-b + (d ** 0.5)) / (2 * a)
+    x2 = (-b - (d ** 0.5)) / (2 * a)
+    print(f"{x1:.2f} and {x2:.2f}")
+elif d == 0:
+    x3 = -b / (2 * a)
+    print(f"{x3:.2f}")
+else:
+    print("No root")
+
+# print(d) просто для себе робила
+
 # Напишіть програму, щоб визначити, чи задане ціле число (вводиться користувачем) парне або непарне.
-# Вхідні дані:
-# 2
-# 5
-# 11
-# Вихідні дані:
-# True
-# False
-# False
+
+n3 = int(input("Enter number: "))
+
+if n3 % 2 == 0:
+    print("True")
+else:
+    print("False")
+
 # Відомі рік і номер місяця народження людини, а також рік і номер місяця сьогоднішнього дня (січень - 1 і т. д.). Визначити вік людини (число повних років). У разі збігу вказаних номерів місяців вважати, що пройшов повний рік.
-# Вхідні дані:
-# 1998
-# 3
-# 2018
-# 2
-# Вихідні дані:
-# 19
-# Дано чотирицифрове число. Замінити усі парні цифри числа на символ * і вивести число.
-# Вхідні дані:
-# 2358
-# 2227
-# 1353
-# Вихідні дані:
-# *35*
-# ***7
-# 1353
+
+birth_month = int(input("Enter number of your birth month (e.g January - 1): "))
+birth_year = int(input("Enter your birth year: "))
+current_month = int(input("Enter number of current month (e.g January - 1): "))
+current_year = int(input("Enter current year: "))
+
+if birth_month <= current_month:
+    age = current_year - birth_year
+elif birth_month > current_month:
+    age = current_year - birth_year - 1
+print(f"You are {age} years old")
+
+#  Дано чотирицифрове число. Замінити усі парні цифри числа на символ * і вивести число.
+
+n4 = str(int(input("Enter four digits number: ")))
+
+digit1 = int(n4[0])
+digit2 = int(n4[1])
+digit3 = int(n4[2])
+digit4 = int(n4[3])
+
+if digit1 % 2 == 0:
+    digit1 = "*"
+
+if digit2 % 2 == 0:
+    digit2 = "*"
+
+if digit3 % 2 == 0:
+    digit3 = "*"
+
+if digit4 % 2 == 0:
+    digit4 = "*"
+
+print(str(digit1) + str(digit2) + str(digit3) + str(digit4))

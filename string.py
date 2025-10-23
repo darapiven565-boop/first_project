@@ -1,46 +1,67 @@
-# Напишіть програму, яка приймає від користувача рядок, і відображає 
-# цей рядок у верхньому і нижньому регістрах.
+# # Напишіть програму, яка приймає від користувача рядок, і відображає 
+# # цей рядок у верхньому і нижньому регістрах.
 
-message = input("Enter your message: ")
-print(message.lower())
-print(message.upper())
+# message = input("Enter your message: ")
+# print(message.lower())
+# print(message.upper())
 
-# Скласти програму, яка запитує назву баскетбольної команди і повторює 
-# її на екрані зі словами: This is a champion!.
+# # Скласти програму, яка запитує назву баскетбольної команди і повторює 
+# # її на екрані зі словами: This is a champion!.
 
-team_name = input("Enter the name of the team: ")
-print(f"{team_name}: this is a champion!")
+# team_name = input("Enter the name of the team: ")
+# print(f"{team_name}: this is a champion!")
 
-# Дано натуральне число. Знайти число, що отримується при прочитанні 
-# його цифр справа наліво.
+# # Дано натуральне число. Знайти число, що отримується при прочитанні 
+# # його цифр справа наліво.
 
-n = input("Enter a natural number: ")
-print(n[ : :-1])
+# n = input("Enter a natural number: ")
+# print(n[ : :-1])
 
-# Дано рядок. Змініть регістр символів в цьому рядку так, щоб перша 
-# буква кожного слова була великою, а інші літери - малими. 
-# (метод s.title())
+# # Дано рядок. Змініть регістр символів в цьому рядку так, щоб перша 
+# # буква кожного слова була великою, а інші літери - малими. 
+# # (метод s.title())
 
-message2 = input("Enter your message: ") 
-print(message2.title())
+# message2 = input("Enter your message: ") 
+# print(message2.title())
 
 # Дано рядок. Визначити порядковий номер першої вказаної букви.
 #  Якщо такої літери немає, вивести нуль.
 
+# string = "Hello, our precious costomer!"
+# print(string)
 
+# letter = input("Enter one letter: ")
+
+# if letter in string:
+#     print(string.index(letter))
+# else:
+#     print("0")
 
 # Напишіть програму, яка по введеному числу n від 1 до 9 виводить на екран n пінгвінів з відповідним номером - число від 1 до n. Зображення одного пінгвіна має розмір 5 x 9 символів, між двома сусідніми пінгвінами також є порожній (з пропусків) стовпець. Дозволяється вивести порожній стовпець після останнього пінгвіна. Для спрощення малювання скопіюйте пінгвіна із вихідних даних. Врахуйте, що виведення на екран виконується порядково, а не «попінгвінно».
-# Вхідні дані: 
-#  4 
-#  Вихідні дані: 
-#     _~_        _~_        _~_        _~_ 
-#    (o o)      (o o)      (o o)      (o o) 
-#   /  V  \    /  V  \    /  V  \    /  V  \ 
-#  /(  1  )\  /(  2  )\  /(  3  )\  /(  4  )\ 
-#    ^^ ^^      ^^ ^^      ^^ ^^      ^^ ^^
+
+n2 = int(input("Enter how many pinguins do you want till 9: "))
+
+string1 = "    _~_     " * n2
+string2 = "   (o o)    " * n2
+string3 = r"  /  V  \   " * n2
+string5 = "   ^^ ^^    " * n2
+# nums = "1 2 3 4 5 6 7 8 9"[:2*n2]
+
+# string4 = " /(  " + "  )\\   /(  ".join(nums.split()) + "  )\\ "
+
+print(string1)
+print(string2)
+print(string3)
+for n in range(1, n2 + 1 ):
+    print(f" /(  {n}  )\\  ", end="" )
+
+# print(string4)
+print ("\n" + string5)
+
+
 
 # У рядку є кілька слів, розділених одним або декількома пропусками. Потрібно прибрати з тексту зайві пропуски: два і більше пропусків поспіль, а також всі пропуски на початку і в кінці рядка. На вхід програмі подається рядок, що складається не більше ніж з 255 символів. Надрукувати новий рядок.
-# Вхідні дані:
+# Вхідні дані: for smth in range(1:smth)
 #    Beyond the green     swelling hills of the     Mittel Land rose mighty slopes of forest    up    to the lofty steeps of the Carpathians    themselves
 # Вихідні дані:
 # Beyond the green swelling hills of the Mittel Land rose mighty slopes of forest up to the lofty steeps of the Carpathians themselves
