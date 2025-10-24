@@ -24,7 +24,15 @@
 
 # Виведіть повідомлення Hello, Python! на екран n разів (n - ціле число, яке вводить користувач).
 
-n2 = int(input("Enter the number: "))
+# n2 = int(input("Enter the number: "))
 
-for i in range(n2):
-    print("Hallo, Python!")
+# for i in range(n2):
+#     print("Hallo, Python!")
+
+# Дано два цілих числа a і b (a ≤ b). Виведіть всі числа від a до b включно.
+
+n3 = int(input("Enter the number1: "))
+n4 = int(input("Enter the number2: "))
+
+while n3 <= n4:
+    
