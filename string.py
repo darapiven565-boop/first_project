@@ -71,7 +71,7 @@ print(" ".join(k))
 
 
 # Дано рядок, що складається з n цифр (тобто одноцифрових чисел), між якими стоїть n-1 знаків операцій, кожна з яких може бути або +, або -. Обчисліть значення цього виразу. Програма має надрукувати результат обчислення цього виразу.
-# ex = input("Enter an addition or subtraction expression of any length using only single-digit numbers:\n")
+ex = input("Enter an addition or subtraction expression of any length using only single-digit numbers:\n")
 
 sum = int(ex[0])
 
