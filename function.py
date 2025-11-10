@@ -136,7 +136,7 @@ def income(class_A, class_B, class_C):
 category_1 = "A"
 price_1 = 20.50
 amount_1 = 45
-# list_a = [category_1, price_1, amount_1]
+list_a = [category_1, price_1, amount_1]
 price_2 = 15.75
 category_2 = "B"
 amount_2 = 30 
