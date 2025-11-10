@@ -136,7 +136,7 @@ def income(class_A, class_B, class_C):
 category_1 = "A"
 price_1 = 20.50
 amount_1 = 45
-list_a = [category_1, price_1, amount_1]
+# list_a = [category_1, price_1, amount_1]
 price_2 = 15.75
 category_2 = "B"
 amount_2 = 30 
@@ -147,6 +147,8 @@ amount_3 = 15
 list_c = [category_3, price_3, amount_3]
 
 print(income(list_a, list_b, list_c))
+
+
 
 # Напишіть функцію, яка перевіряє, чи рядок є паліндром чи ні. Регістр літер, пропуски і знаки пунктуації не враховувати.
 
@@ -167,3 +169,24 @@ print(palindrome_check(string_1))
 print(palindrome_check(string_2))
 
 # Напишіть рекурсивну функцію, яка обчислює суму цілих чисел a і b. З арифметичних операцій використовується тільки додавання одиниці і віднімання одиниці.
+
+def add_number(a, b):
+    if b == 0:
+        return a
+    elif b > 0:
+        return add_number(a + 1, b - 1)
+    else:  # b< 0
+        return add_number(a - 1, b + 1)
+# print(add_number(3, -9))
+
+# Дано послідовність цілих чисел, що закінчується числом 0. Напишіть рекурсивну функцію, яка друкує цю послідовність в зворотному порядку. При розв’язуванні цього завдання не можна користуватися списками.
+def reverse_order(numbers, index=0):
+    if numbers[index] == 0:
+        print(numbers[index], end=" ")
+        return
+    reverse_order(numbers, index + 1)
+    print(numbers[index], end=" ")
+
+
+numbers = list(map(int, "2 15 77 3 0".split()))
+reverse_order(numbers)
